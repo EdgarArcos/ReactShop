@@ -1,0 +1,19 @@
+.description{
+color: azure;
+}
+
+.productPhoto{
+    width: 80%;
+    padding-top: 10px;
+}
+
+.productCage{
+    padding-left: 10px;
+}
+
+.ProductList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
