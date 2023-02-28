@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
-import data from "../../data/datawishlist.json";
+import React, { useEffect, useState } from 'react'
 import TodoList from './TodoList';
 import "./list.css";
 import TodoForm from './TodoForm';
 
 
 export const List = () => {
-  const [todos, setTodos] = useState(data)
+  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos"))||[])
 
   const onComplete = (id) => {
     setTodos(todos.map((todo) => {
@@ -23,6 +22,10 @@ export const List = () => {
 
     setTodos([...todos,newWish])
   }
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos))
+  },[todos])
 
   return (
     <div className="container">
