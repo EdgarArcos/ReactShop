@@ -1,0 +1,17 @@
+.container {
+    margin: auto;
+    width: 50%;
+    border: 1px solid #73ad21;
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+.add-btn {
+    float: right;
+    background-color: red;
+    color: aliceblue;
+}
+
+.todolist{
+    list-style: none;
+}

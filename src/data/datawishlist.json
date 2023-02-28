@@ -1,0 +1,13 @@
+[{
+    "id":1,
+    "task":"lavar carro",
+    "completed": false
+},{
+    "id":2,
+    "task":"Ir de compras",
+    "completed": true
+},{
+    "id":3,
+    "task":"Comer",
+    "completed": false
+}]
