@@ -2,8 +2,8 @@ import React from 'react'
 
 
 
-export default function TodoItem({todo , onComplete , onDeleteItem}) {
-
+export default function TodoItem({todo , onComplete , onDeleteItem,filterTodos}) {
+  
     const getStyle = () =>{
         return {
             textDecoration: todo.completed ? 'line-through' : 'none' ,
@@ -12,10 +12,14 @@ export default function TodoItem({todo , onComplete , onDeleteItem}) {
             backgroundColor: "#CCF7E3",
         }
     }
+    const onChangeHandler = (event) =>{
+      onComplete(todo.id)
+      filterTodos()
+    }
   return (
     <li style={getStyle()}>
         <input type='checkbox' checked = {todo.completed}
-        onChange={() => onComplete(todo.id)}/>
+        onChange={onChangeHandler}/>
         {todo.task}
         <button className='add-btn' onClick={() => onDeleteItem(todo.id)}>X</button>
     </li>
