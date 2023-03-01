@@ -12,7 +12,7 @@ export default function TodoItem({todo , onComplete , onDeleteItem,filterTodos})
             backgroundColor: "#CCF7E3",
         }
     }
-    const onChangeHandler = (event) =>{
+    const onChangeHandler = () =>{
       onComplete(todo.id)
       filterTodos()
     }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import TodoList from './TodoList';
 import "./list.css";
 import TodoForm from './TodoForm';
+import { v4 as uuidv4 } from 'uuid';
 
 export const List = () => {
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos"))||[])
@@ -16,7 +17,7 @@ export const List = () => {
     let filteredSiTrue = [...todos].filter(todo => todo.completed === true)
     const filteredNoTrue = [...todos].filter(todo => todo.completed !== true)
     setTodosCompleted(filteredSiTrue)
-    console.log(filteredSiTrue);
+    console.log(todosCompleted);
     console.log("no true",filteredNoTrue);
   }
   const onDeleteItem = (id) =>{
@@ -24,10 +25,11 @@ export const List = () => {
   }
 
   const addTodo = (newTodo) => {
-    let newWish = {id : +new Date(), task:newTodo, completed:false};
+    let newWish = {id : uuidv4(), task:newTodo, completed:false};
     setTodos([...todos,newWish])
   }
 
+  console.log(todos);
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos))
   },[todos])
