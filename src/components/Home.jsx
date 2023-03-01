@@ -9,9 +9,7 @@ function Home() {
     <div className="App">
       <Navbar/>
       <Banner/>
-      <div>
       <ProductList/>
-      </div>
     </div>
   );
 }

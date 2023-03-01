@@ -6,7 +6,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const List = () => {
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos"))||[])
-  const [todosCompleted, setTodosCompleted] = useState([])
 
   const onComplete = (id) => {
     setTodos(todos.map((todo) => {
@@ -16,8 +15,7 @@ export const List = () => {
   const filterTodos = () =>{
     let filteredSiTrue = [...todos].filter(todo => todo.completed === true)
     const filteredNoTrue = [...todos].filter(todo => todo.completed !== true)
-    setTodosCompleted(filteredSiTrue)
-    console.log(todosCompleted);
+    console.log("si true",filteredSiTrue);
     console.log("no true",filteredNoTrue);
   }
   const onDeleteItem = (id) =>{
@@ -29,7 +27,6 @@ export const List = () => {
     setTodos([...todos,newWish])
   }
 
-  console.log(todos);
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos))
   },[todos])
