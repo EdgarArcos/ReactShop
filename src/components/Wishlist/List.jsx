@@ -10,7 +10,7 @@ export const List = () => {
 
   const onComplete = (id) => {
     setTodos(todos.map((todo) => {
-      return todo.id === Number(id) ? {...todo, completed: !todo.completed} : {...todo};
+      return todo.id === (id) ? {...todo, completed: !todo.completed} : {...todo};
   }))
   }
   const filterTodos = () =>{
