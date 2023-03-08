@@ -8,9 +8,9 @@ export const Navbar = () => {
       <div className="nav_logo">PCED</div>
       <div className="nav_items">
         <a href="#">Inicio</a>
-        <a href="#">Tienda</a>
+        <Link to="/">Tienda</Link>
         <Link to="/Wishlist">WishList</Link>
-        <a href="#">Carrito</a>
+        <Link to="/Cart">Carrito</Link>
       </div>
     </nav>
   )
