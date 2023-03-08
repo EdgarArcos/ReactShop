@@ -6,7 +6,7 @@ import { cartContext } from '../Carro/CartProvider';
 
 export const ProductItem = ({item}) => {
   const [cart, setCart]  = useContext(cartContext);
-    console.log(cart)
+    //console.log(cart)
     
     const { url, name, price } = item;
   return (
