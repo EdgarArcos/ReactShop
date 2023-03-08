@@ -1,0 +1,11 @@
+import { useContext } from "react";
+import { cartContext } from "../Carro/CartProvider";
+export default function AddtoCartButton({ item }) {
+    const [cart, setCart]  = useContext(cartContext);
+    const addToCart = (item) => {
+        setCart([...cart,item])
+    console.log(item);
+    }
+    console.log(cart);
+    return <button onClick={() => addToCart(item)}>Add to cart</button>;
+}
