@@ -7,14 +7,16 @@ export default function ItemCart({product}) {
     const { url, name, price, id } = product;
     //console.log(product);
   return (
+    <div>
     <ul>
         <li>
+        <h2>{name}</h2>
         <img src= {url} alt={name} />
-        <p>{name}</p>
         <p>{price}</p>
         <p>{id}</p>
         <ButtonDeleteCart id={id} product ={product}/>
         </li>
     </ul>
+    </div>
   )
 }
