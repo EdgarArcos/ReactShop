@@ -1,7 +1,6 @@
 import React, {useContext} from 'react'
 import { cartContext } from './CartProvider'
 import ItemCart from './ItemCart';
-import MostrarTotal from './MostrarTotal';
 import TotalCart from './TotalCart';
 
 export default function CartContent() {
@@ -19,7 +18,7 @@ export default function CartContent() {
             )
           })
         }
-        <MostrarTotal/>
+        <TotalCart/>
     </div>
     </>
   )

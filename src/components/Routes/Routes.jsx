@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route,} from 'react-router-dom';
-import Home from './Home';
-import { List } from "./Wishlist/List";
-import  CartContent  from "../components/Carro/CartContent";
-import CartProvider from './Carro/CartProvider';
-import ProductDeatail from './ProductDetail/ProductDeatail';
-import PageRegister from "./Register/PageRegister";
+import Home from '../Home/Home';
+import { List } from "../Wishlist/List";
+import  CartContent  from "../Carro/CartContent";
+import CartProvider from '../Carro/CartProvider';
+import ProductDeatail from '../ProductDetail/ProductDeatail';
+import PageRegister from "../Register/PageRegister";
 
 export const Router = () =>{
     return (
