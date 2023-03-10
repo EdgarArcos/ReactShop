@@ -5,7 +5,6 @@ import ButtonDeleteCart from './ButtonDeleteCart';
 
 export default function ItemCart({product}) {
     const { url, name, price, id } = product;
-    //console.log(product);
   return (
     <div>
     <ul>

@@ -7,7 +7,6 @@ export default function ProductDeatail() {
     const { name , price, url} = products.find((product) =>{
         return product.id === parseInt(productId)
     })
-    console.log(name)
   return (
     <div>
         <h1>{name}</h1>

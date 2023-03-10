@@ -10,7 +10,7 @@ function Home() {
     <div className="App">
       <Navbar />
       <Banner />
-        <ProductList />
+      <ProductList />
     </div>
   );
 }

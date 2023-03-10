@@ -5,6 +5,5 @@ export default function AddtoCartButton({ item }) {
     const addToCart = (item) => {
         setCart([...cart,item])
     }
-    //console.log(cart);
     return <button onClick={() => addToCart(item)}>Add to cart</button>;
 }

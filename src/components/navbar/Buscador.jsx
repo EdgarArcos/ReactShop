@@ -1,5 +1,4 @@
 import {useSearchParams} from 'react-router-dom'
-import { products } from "../../data/products";
 
 export default function Buscador() {
     const [searchParams, setSearchParams] = useSearchParams();

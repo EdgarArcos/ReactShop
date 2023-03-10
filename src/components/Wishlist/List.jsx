@@ -12,12 +12,6 @@ export const List = () => {
       return todo.id === (id) ? {...todo, completed: !todo.completed} : {...todo};
   }))
   }
-  const filterTodos = () =>{
-    let filteredSiTrue = [...todos].filter(todo => todo.completed === true)
-    const filteredNoTrue = [...todos].filter(todo => todo.completed !== true)
-    //console.log("si true",filteredSiTrue);
-    //console.log("no true",filteredNoTrue);
-  }
   const onDeleteItem = (id) =>{
     setTodos([...todos].filter(todo => todo.id !== id))
   }
@@ -33,7 +27,7 @@ export const List = () => {
   return (
     <div className="container">
       <TodoForm addTodo = {addTodo}/>
-      <TodoList todos={todos} onComplete={onComplete} onDeleteItem={onDeleteItem} filterTodos={filterTodos}/>
+      <TodoList todos={todos} onComplete={onComplete} onDeleteItem={onDeleteItem}/>
     </div>
   )
 }

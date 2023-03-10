@@ -5,10 +5,7 @@ import { cartContext } from '../Carro/CartProvider';
 import VerMasButton from './VerMasButton';
 
 
-export const ProductItem = ({item}) => {
-  const [cart, setCart]  = useContext(cartContext);
-    //console.log(cart)
-    
+export const ProductItem = ({item}) => {    
     const { url, name, price,id } = item;
   return (
     <div className='productCage'>
