@@ -11,7 +11,7 @@ export const Navbar = () => {
       <Buscador/>
       </div>
       <div className="nav_items">
-        <a href="/Login">Registrarse</a>
+        <a href="/Login">Login</a>
         <Link to="/">Tienda</Link>
         <Link to="/Wishlist">WishList</Link>
         <Link to="/Cart">Carrito</Link>

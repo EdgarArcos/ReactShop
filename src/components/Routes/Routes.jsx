@@ -13,12 +13,12 @@ export const Router = () =>{
     <CartProvider>
     <BrowserRouter>
     <Routes>
-        <Route path='*' element={<PageERROR/>}/>
         <Route path='/Login' element={<PageLogin/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path="/Wishlist" element={<List/>}/>
         <Route path="/Cart" element={<CartContent/>}/>
         <Route path="/:id" element={<ProductDeatail/>}/>
+        <Route path='*' element={<PageERROR/>}/>
     </Routes>
     </BrowserRouter>
     </CartProvider>
