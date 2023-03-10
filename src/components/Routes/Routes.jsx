@@ -5,14 +5,16 @@ import { List } from "../Wishlist/List";
 import  CartContent  from "../Carro/CartContent";
 import CartProvider from '../Carro/CartProvider';
 import ProductDeatail from '../ProductDetail/ProductDeatail';
-import PageRegister from "../Register/PageRegister";
+import PageLogin from "../Log-in/PageLogin";
+import { PageERROR } from '../PageError/PageERROR';
 
 export const Router = () =>{
     return (
     <CartProvider>
     <BrowserRouter>
     <Routes>
-        <Route path='/Register' element={<PageRegister/>}/>
+        <Route path='*' element={<PageERROR/>}/>
+        <Route path='/Login' element={<PageLogin/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path="/Wishlist" element={<List/>}/>
         <Route path="/Cart" element={<CartContent/>}/>

@@ -14,7 +14,6 @@ export default function TodoItem({todo , onComplete , onDeleteItem,filterTodos})
     }
     const onChangeHandler = () =>{
       onComplete(todo.id)
-      filterTodos()
     }
   return (
     <li style={getStyle()}>
