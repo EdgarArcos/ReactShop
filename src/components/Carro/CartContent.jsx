@@ -14,7 +14,7 @@ export default function CartContent() {
         cart.map((product,id) =>{
             //console.log(product);
             return(
-            <ItemCart id={id} product={product}/>  
+            <ItemCart id={id} product={product} key={id}/>  
             )
           })
         }
