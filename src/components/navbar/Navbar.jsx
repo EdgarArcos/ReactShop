@@ -16,7 +16,7 @@ export const Navbar = () => {
         <Link className='nav_icons' to="/"><MdHome/></Link>
         <Link className='nav_icons' to="/Wishlist"><MdAddTask/></Link>
         <Link className='nav_icons' to="/Cart"><MdShoppingCart/></Link>
-        <Link className='nav_icons' to="/Login"><MdOutlinePersonAddAlt/></Link>
+        <Link className='nav_icons' to=""><MdOutlinePersonAddAlt/></Link>
       </div>
     </nav>
   )
