@@ -2,12 +2,15 @@ import React, {useContext} from 'react'
 import { cartContext } from './CartProvider'
 import ItemCart from './ItemCart';
 import TotalCart from './TotalCart';
+import {Navbar} from "../navbar/Navbar";
+import "./carro.css";
 
 export default function CartContent() {
     const [cart]  = useContext(cartContext);
   return (
     <>
-    <div>
+    <nav><Navbar/></nav>
+    <div className='cart_list'>
         {
         cart.map((product,id) =>{
             return(
@@ -15,7 +18,7 @@ export default function CartContent() {
             )
           })
         }
-        <TotalCart/>
+<TotalCart/>
     </div>
     </>
   )

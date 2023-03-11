@@ -1,0 +1,39 @@
+.item_cart{
+        padding-left: 10px;
+        background-color: #737c8d8b;
+        color: white;
+        text-align:center ;
+        margin-top: 80px;
+}
+
+.cart_list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+.productCartPhoto{
+    width: 70%;
+    padding-top: 10px;
+}
+
+.buttonDelete{
+    font-size:200% ;
+    margin-left: 300px;
+}
+
+.buttonDelete:hover{
+    font-size:210% ;
+    margin-left: 300px;
+    color: red;
+}
+
+.total{
+    position: fixed;
+    font-size: 20px;
+    color: aliceblue;
+    background:#ff8d01;
+    margin-top: 59px;
+    margin-left: 91%;
+    padding: 13px;
+}

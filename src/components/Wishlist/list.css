@@ -1,17 +1,55 @@
 .container {
     margin: auto;
-    width: 50%;
-    border: 1px solid #73ad21;
-    background-color: darkcyan;
-    padding: 10px;
+    width: 20%;
+    background-color: #ff8d01;
+    padding: 80px;
+    padding-bottom: 10px;
 }
 
-.add-btn {
+.delete-btn {
     float: right;
-    background-color: red;
     color: aliceblue;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.delete-btn:hover {
+    float: right;
+    color: rgb(239, 14, 14);
+    font-size: 20px;
 }
 
 .todolist{
     list-style: none;
+    font-size: 20px;
+}
+
+.addTodo{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    color: #ffffff;
+    caret-color: transparent;
+    width: 10vw;
+    height: 3vh;
+    padding-left: 10px;
+    margin-left: 60px;
+}
+
+.addTodoButton{
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.addTodoButton:hover{
+    border: 1px solid #ffffff;
+    font-size: 19.5px;
 }

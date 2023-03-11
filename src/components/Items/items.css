@@ -9,11 +9,26 @@ color: azure;
 
 .productCage{
     padding-left: 10px;
+    background-color: #737c8d8b;
+    margin: 5px;
+    color: white;
 }
 
 .ProductList{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+.icon_item{
+    font-size: 200%;
+    color: #ff8d01;
+    margin: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.icon_item:hover{
+    color: rgb(0, 0, 0);
 }
 

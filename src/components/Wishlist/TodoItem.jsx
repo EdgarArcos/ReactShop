@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdOutlineDangerous } from "react-icons/md";
 
 
 
@@ -8,8 +9,9 @@ export default function TodoItem({todo , onComplete , onDeleteItem,filterTodos})
         return {
             textDecoration: todo.completed ? 'line-through' : 'none' ,
             margin: "20px",
+            color: "white",
             border: "1px solid #ffffff",
-            backgroundColor: "#CCF7E3",
+            backgroundColor: "#282c34",
         }
     }
     const onChangeHandler = () =>{
@@ -20,7 +22,7 @@ export default function TodoItem({todo , onComplete , onDeleteItem,filterTodos})
         <input type='checkbox' checked = {todo.completed}
         onChange={onChangeHandler}/>
         {todo.task}
-        <button className='add-btn' onClick={() => onDeleteItem(todo.id)}>X</button>
+        <span className='delete-btn' onClick={() => onDeleteItem(todo.id)}><MdOutlineDangerous/></span>
     </li>
   )
 }

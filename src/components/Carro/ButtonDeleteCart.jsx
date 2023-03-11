@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { cartContext } from './CartProvider'
+import { MdOutlineDeleteForever } from "react-icons/md";
 
 export default function ButtonDeleteCart (product) {
     const [cart, setCart]  = useContext(cartContext);
@@ -7,7 +8,7 @@ export default function ButtonDeleteCart (product) {
         setCart([...cart].filter(products => products.id !== id))
     }
     return (
-        <button onClick={() => onDeleteItem(product.id)}>Delete</button>
+        <span className='buttonDelete' onClick={() => onDeleteItem(product.id)}><MdOutlineDeleteForever/></span>
     )
 }
 

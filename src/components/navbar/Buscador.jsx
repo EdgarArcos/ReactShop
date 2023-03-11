@@ -10,6 +10,6 @@ export default function Buscador() {
     }
 
   return (
-    <input type="text" placeholder='Search' value={query} name="Search" onChange={handleInput} />
+    <input className='search' type="text" placeholder='Search' value={query} name="Search" onChange={handleInput} />
   )
 }

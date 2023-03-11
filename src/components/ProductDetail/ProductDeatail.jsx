@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams} from 'react-router-dom'
 import { products } from "../../data/products";
+import { Navbar } from "../navbar/Navbar";
 
 export default function ProductDeatail() {
     const {id : productId} = useParams()
@@ -9,6 +10,9 @@ export default function ProductDeatail() {
     })
   return (
     <div>
+    <Navbar/>
+    <div className='container'>
+    <div className='productCage'>
         <h1>{name}</h1>
         <p>{price}</p>
         <img src={url} alt={name} />
@@ -16,6 +20,8 @@ export default function ProductDeatail() {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aperiam excepturi quam expedita error voluptatem earum eos fugit veniam. Autem sint commodi enim corrupti aliquid perspiciatis consequuntur amet praesentium. Facilis?
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam totam quod fugiat quidem quae perferendis, eos animi unde enim, est minima magnam consequatur deleniti voluptates accusamus ullam explicabo veritatis a.
         </p>
+        </div>
+    </div>
     </div>
   )
 }

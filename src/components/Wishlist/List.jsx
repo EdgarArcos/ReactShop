@@ -3,6 +3,7 @@ import TodoList from './TodoList';
 import "./list.css";
 import TodoForm from './TodoForm';
 import { v4 as uuidv4 } from 'uuid';
+import {Navbar} from "../navbar/Navbar";
 
 export const List = () => {
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos"))||[])
@@ -25,9 +26,12 @@ export const List = () => {
     localStorage.setItem("todos", JSON.stringify(todos))
   },[todos])
   return (
+    <>
+    <Navbar/>
     <div className="container">
       <TodoForm addTodo = {addTodo}/>
       <TodoList todos={todos} onComplete={onComplete} onDeleteItem={onDeleteItem}/>
     </div>
+    </>
   )
 }
