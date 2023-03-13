@@ -1,0 +1,22 @@
+FUNCIONAMIENO APP:
+El funcionamiento de este proyecto es una tienda con React js tenemos una lista de deseos donde se pueden añadir y borrar deseos o tacharlos como completados luego tenemos un carrito donde se guardan los productos que contienen la pagina principal los 3 hooks mas usados son useEffect,useContext y useState tambien tenemos una pagina de rutas donde podemos ver un funcionamiento basico de las rutas.
+
+ESTADO PROYECTO:
+Este proyecto se encuentra en actual desarrollo se tiene la intencion de mejorar la parte estetica de la pagina por completo y sobre todo implementar mas hooks como por ejemplo el useReduce en vez del useState , hacer la web responsive y solucionar problemas.
+
+REQUISITOS PARA PODER USAR EL PROYECTO:
+Instalar el npm descargar el codigo y abrirlo en VScode una vez hecho esto vamos a la carpeta edgarrepo (donde esta instalada la libreria de react) y ejecutamos en la consola de comandos "npm start"
+
+TECNOLOGIAS USADAS: 
+Se uso principalmente React y para los iconos React.icons
+
+BUGS CONOCIDOS Y NO SOLUCIONADOS POR AHORA:
+Cuando añades un mismo objeto al carrito si lo borras no se borra uno se borran todos.
+
+El carrito no guarda nada en el localStorage 
+
+Si haces click varias veces en el boton de añadir se selecciona la imagen para copiar 
+
+
+
+
