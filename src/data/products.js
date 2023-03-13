@@ -48,13 +48,13 @@ export const products = [
     id: 8,
   },
   {
-    name: "Maradona",
+    name: "Pinocho",
     price: 12.49,
     url: "../images/Nvidia2070Ti.jpg",
     id: 9,
   },
   {
-    name: "El Profesor",
+    name: "Mazedonia",
     price: 9.99,
     url: "../images/Nvidia2070Ti.jpg",
     id: 10,

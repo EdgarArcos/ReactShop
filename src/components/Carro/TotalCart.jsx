@@ -7,6 +7,6 @@ export default function TotalCart() {
     return acumulador + currentProduct.price
     },0)
     return(
-        <p className='total'>Total del pedido: {total}</p>
+        <p className='total'>Total del pedido: {Math.round(total)}</p>
     )
     }
