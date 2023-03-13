@@ -1,4 +1,4 @@
-import React, {useContext,useState} from 'react'
+import React, {useContext} from 'react'
 import { cartContext } from './CartProvider'
 import "./carro.css"
 export default function TotalCart() {

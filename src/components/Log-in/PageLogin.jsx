@@ -1,6 +1,6 @@
 //import React, { useState } from "react"
 //import { v4 as uuidv4 } from 'uuid';
-import  buttonCreateUser  from "./buttonCreateUser";
+//import  buttonCreateUser  from "./buttonCreateUser";
 export default function PageRegister() {
   //const [user,setUser] = useState()
 

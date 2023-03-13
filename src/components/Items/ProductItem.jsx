@@ -6,7 +6,7 @@ import VerMasButton from './VerMasButton';
 
 
 export const ProductItem = ({item}) => {    
-    const { url, name, price,id } = item;
+    const { url, name, price} = item;
   return (
     <div className='productCage'>
     <img className='productPhoto' src={url} alt={name} />
